@@ -28,17 +28,19 @@
             "prototype": "montage/core/radio-button-controller"
         },
         "rangeController": {
-            "prototype": "montage/core/range-controller"
+            "prototype": "montage/core/range-controller",
+            "properties": {
+                "content": [
+                    1,
+                    2,
+                    3
+                    ]
+            }
         },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
                 "element": {"#": "repetition"},
-                "content": [
-                    1,
-                    2,
-                    3
-                ],
                 "contentController": {"@": "rangeController"}
             }
         },
