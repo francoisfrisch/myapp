@@ -13,12 +13,6 @@
                 "element": {"#": "main"}
             }
         },
-        "montageVersion": {
-            "prototype": "ui/version.reel",
-            "properties": {
-                "element": {"#": "montageVersion"}
-            }
-        },
         "radio": {
             "prototype": "digit/ui/radio-button.reel",
             "properties": {
@@ -33,6 +27,9 @@
         "radioButtonController": {
             "prototype": "montage/core/radio-button-controller"
         },
+        "rangeController": {
+            "prototype": "montage/core/range-controller"
+        },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
@@ -41,7 +38,18 @@
                     1,
                     2,
                     3
-                ]
+                ],
+                "contentController": {"@": "rangeController"}
+            }
+        },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@repetition:iteration.object.name"}
             }
         }
     }
@@ -53,6 +61,7 @@
         <ul data-montage-id="repetition">
             <li>
                 <input type="radio" data-montage-id="radio">
+                <span data-montage-id="text"></span>
             </li>
         </ul>
     </div>
