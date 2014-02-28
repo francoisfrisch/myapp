@@ -34,7 +34,7 @@
                     1,
                     2,
                     3
-                    ]
+                ]
             }
         },
         "repetition": {
@@ -53,13 +53,23 @@
             "bindings": {
                 "value": {"<-": "@repetition:iteration.object.name"}
             }
+        },
+        "text2": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text2"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@radioButtonController.value"}
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <div data-montage-id="montageVersion"></div>
+        <p data-montage-id="text2"></p>
         <ul data-montage-id="repetition">
             <li>
                 <input type="radio" data-montage-id="radio">
