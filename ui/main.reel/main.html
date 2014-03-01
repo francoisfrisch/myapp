@@ -13,6 +13,13 @@
                 "element": {"#": "main"}
             }
         },
+        "list": {
+            "prototype": "digit/ui/list.reel",
+            "properties": {
+                "element": {"#": "list"},
+                "contentController": {"@": "rangeController"}
+            }
+        },
         "listItem1": {
             "prototype": "digit/ui/list-item.reel",
             "properties": {
@@ -49,13 +56,6 @@
                 ]
             }
         },
-        "repetition": {
-            "prototype": "digit/ui/list.reel",
-            "properties": {
-                "element": {"#": "repetition"},
-                "contentController": {"@": "rangeController"}
-            }
-        },
         "selectedValue": {
             "prototype": "montage/ui/text.reel",
             "properties": {
@@ -82,7 +82,7 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <p data-montage-id="selectedValue"></p>
-        <ul data-montage-id="repetition">
+        <ul data-montage-id="list">
             <li data-montage-id="listItem1">
                 <p data-montage-id="text"></p>
                 <span data-montage-id="radio"></span>
