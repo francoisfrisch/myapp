@@ -56,6 +56,16 @@
                 "contentController": {"@": "rangeController"}
             }
         },
+        "selectedValue": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "selectedValue"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@radioButtonController.value"}
+            }
+        },
         "text": {
             "prototype": "digit/ui/text.reel",
             "properties": {
@@ -65,23 +75,13 @@
             "bindings": {
                 "value": {"<-": "@repetition:iteration.object.name"}
             }
-        },
-        "text2": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "text2"},
-                "value": "Text"
-            },
-            "bindings": {
-                "value": {"<-": "@radioButtonController.value"}
-            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <p data-montage-id="text2"></p>
+        <p data-montage-id="selectedValue"></p>
         <ul data-montage-id="repetition">
             <li data-montage-id="listItem1">
                 <p data-montage-id="text"></p>
