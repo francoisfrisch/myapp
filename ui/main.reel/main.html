@@ -13,6 +13,18 @@
                 "element": {"#": "main"}
             }
         },
+        "list": {
+            "prototype": "digit/ui/list.reel",
+            "properties": {
+                "element": {"#": "list"}
+            }
+        },
+        "listItem1": {
+            "prototype": "digit/ui/list-item.reel",
+            "properties": {
+                "element": {"#": "listItem1"}
+            }
+        },
         "radio": {
             "prototype": "digit/ui/radio-button.reel",
             "properties": {
@@ -72,7 +84,12 @@
         <p data-montage-id="text2"></p>
         <ul data-montage-id="repetition">
             <li>
-                <input type="radio" data-montage-id="radio">
+
+            </li>
+        </ul>
+        <ul data-montage-id="list">
+            <li data-montage-id="listItem1">
+                Item
                 <span data-montage-id="text"></span>
             </li>
         </ul>
