@@ -27,7 +27,7 @@
                 "radioButtonController": {"@": "radioButtonController"}
             },
             "bindings": {
-                "value": {"<-": "@repetition:iteration.object"}
+                "value": {"<-": "@repetition:iteration.object.name"}
             }
         },
         "radioButtonController": {
@@ -37,9 +37,15 @@
             "prototype": "montage/core/range-controller",
             "properties": {
                 "content": [
-                    {"name":"one"},
-                    {"name":"two"},
-                    {"name":"three"}
+                    {
+                        "name": "one"
+                    },
+                    {
+                        "name": "two"
+                    },
+                    {
+                        "name": "three"
+                    }
                 ]
             }
         },
@@ -55,9 +61,6 @@
             "properties": {
                 "element": {"#": "text"},
                 "value": "Text"
-            },
-            "bindings": {
-                "value": {"<-": "@repetition:iteration.object.name"}
             }
         },
         "text2": {
@@ -78,7 +81,7 @@
         <p data-montage-id="text2"></p>
         <ul data-montage-id="repetition">
             <li data-montage-id="listItem1">
-                <span data-montage-id="text"></span>
+                <p data-montage-id="text"></p>
                 <span data-montage-id="radio"></span>
             </li>
         </ul>
