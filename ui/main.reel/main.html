@@ -27,7 +27,7 @@
                 "radioButtonController": {"@": "radioButtonController"}
             },
             "bindings": {
-                "value": {"<-": "@repetition:iteration.object.name"}
+                "value": {"<-": "@repetition:iteration.object"}
             }
         },
         "radioButtonController": {
@@ -57,10 +57,13 @@
             }
         },
         "text": {
-            "prototype": "montage/ui/text.reel",
+            "prototype": "digit/ui/text.reel",
             "properties": {
                 "element": {"#": "text"},
                 "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@repetition:iteration.object.name"}
             }
         },
         "text2": {
