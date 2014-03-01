@@ -13,12 +13,6 @@
                 "element": {"#": "main"}
             }
         },
-        "list": {
-            "prototype": "digit/ui/list.reel",
-            "properties": {
-                "element": {"#": "list"}
-            }
-        },
         "listItem1": {
             "prototype": "digit/ui/list-item.reel",
             "properties": {
@@ -50,7 +44,7 @@
             }
         },
         "repetition": {
-            "prototype": "montage/ui/repetition.reel",
+            "prototype": "digit/ui/list.reel",
             "properties": {
                 "element": {"#": "repetition"},
                 "contentController": {"@": "rangeController"}
@@ -83,11 +77,6 @@
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <p data-montage-id="text2"></p>
         <ul data-montage-id="repetition">
-            <li>
-
-            </li>
-        </ul>
-        <ul data-montage-id="list">
             <li data-montage-id="listItem1">
                 <span data-montage-id="text"></span>
                 <span data-montage-id="radio"></span>
